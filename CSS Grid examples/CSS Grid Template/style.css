@@ -1,0 +1,14 @@
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  grid-gap: 20px;
+}
+
+article {
+  grid-column: 1 / 8;
+}

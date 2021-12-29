@@ -1,0 +1,98 @@
+/* ---------------------
+CSS Variables / Default Styles
+--------------------- */
+/*
+css varibale colours - background, text, borders, button, hover
+css varible spacing (large, medium, small)
+css font sizing (xlarge, large medium, small, xsmall)
+css variable line heigh text 7 line out heading
+css varibale fonts and weights
+css varible breakpoints (media queires)
+
+ */
+
+
+* {
+  box-sizing: border-box;
+
+}
+
+body {
+  padding: 0;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-gap: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* ---------------------
+Navigation Styles
+--------------------- */
+
+.main-nav {
+  display: flex;
+  padding-top: 0.875em;
+  align-items: center;
+
+}
+
+.main-nav li {
+  list-style: none;
+}
+
+.main-nav li a {
+  padding: 10px 15px;
+}
+
+.main-nav li:first-child {
+  margin-right: auto; /* splits the logo right from the navigation*/
+}
+
+header {
+  grid-column: 1/-1;
+  border: 2px solid black;
+  height: 100vh;
+
+}
+
+
+.hero {
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+
+
+article {
+  grid-column: 1/10;
+  border: 2px solid black;
+}
+
+.feature-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 40px;
+}
+
+
+
+aside {
+  grid-column: 10/-1;
+  border: 2px solid black;
+}
+
+footer {
+  grid-column: 1/-1;
+  border: 2px solid black;
+
+}
+
+@media only screen and (max-width: 640px) {
+  article, aside {
+    grid-column: 1/-1;
+  }
+}

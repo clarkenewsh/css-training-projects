@@ -1,0 +1,51 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+
+body {
+	font-family: 'Overpass Mono', monospace;
+	font-weight: 300;
+	font-size: 18px;
+	background-color: #fff;
+}
+
+header {
+	background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://images.unsplash.com/photo-1481277542470-605612bd2d61?dpr=2&auto=format&fit=crop&w=1500&h=1080&q=80&cs=tinysrgb&crop=);
+	height: 740px;
+	background-size: cover;
+	background-position: center;
+}
+
+h1 {
+	font-size: 60px;
+	font-weight: 400;
+
+
+}
+
+.intro-content {
+	color: white;
+	margin-top: 90px;
+	margin-left: 180px;
+	text-align: center
+	
+
+
+}
+
+.nav-bar {
+	float: right;
+	list-style: none
+
+}
+
+.nav-bar li {
+	display: inline-block;
+	padding: 10px;
+	text-decoration: none;
+	color: #fff;
+	
+}

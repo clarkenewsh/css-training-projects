@@ -1,0 +1,40 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #000;
+  color: #fff;
+  overflow: hidden;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background: url('christmas.jpg') no-repeat center center/cover;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.animated {
+  margin: 0;
+  padding:0;
+  font-size: 6rem;
+  font-family: 'Charm', cursive;
+  background: url('https://i.ibb.co/89Cf3dm/text-bg.png') no-repeat;
+  background-clip: text; /* this sets the background image of the text (color must be set transparent) */
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: moveBackground 90s linear infinite;
+  -webkit-animation: moveBackground 90s linear infinite;
+}
+
+/* moveBackground keyframe for background text animation */
+@keyframes moveBackground {
+  0% {
+    background-position: 0% 30%; /* animate background on x and y axis */
+  }
+  100% {
+    background-position: 100% 50%; /* animate background on x and y axis */
+  }
+}

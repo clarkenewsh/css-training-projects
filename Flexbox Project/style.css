@@ -1,0 +1,92 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	
+}
+
+.product-filter {
+  display: flex;
+}
+
+.product-filter h1 {
+  flex-grow: 1;
+}
+
+.sort {
+  display: flex;
+}
+
+.collection-sort {
+  display: flex;
+  flex-direction: column;
+}
+
+
+/*IMAGES*/
+
+.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.product-card {
+	flex-grow: 1;
+	flex-basis: 20%;  /*this controls the size/width of the flex items. 20% means that each flex iiten will be 20% meaning 5 items will make 100% of the width of the screen.*/
+	border: red 2px solid;
+																					/*For our design, we want 5 items per row and to wrap the rest to new rows as needed. To get five per row, they'll need to have a width of 20% (5 * 20 = 100). Settings flex-basis: 20% would do the trick, but when we factor in padding, it exceeds 100% and we'll only get 4 per row. With 2% padding on either side and 16% flex-basis, it'll be just right.*/
+	display: flex; /* so child elements can use flexbox stuff too! */
+}
+
+/*We can also do this in shorthand as follows:*/
+/*
+.product-card {
+  flex: 1 16%;
+}*/
+
+To make sure the images within fit nicely:
+
+.product-image img {
+  max-width: 100%;
+}
+
+.product-info {
+  margin-top: auto;
+}
+
+@media (max-width: 920px) {
+  .product-card {
+    flex: 1 25%;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-card {
+    flex: 1 46%;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+
+@media (max-width: 480px) {
+  .product-filter {
+    flex-direction: column;
+  }
+}
+
+
+
+
+  .sort {
+    align-self: flex-start;
+  }
+}

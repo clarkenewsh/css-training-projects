@@ -1,0 +1,54 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+	line-height: 1.375em;
+}
+
+.wrapper {
+	display: flex;
+	flex-flow: column wrap;               /*This enables the footer to be sticky. It will aslo stay at the bottom of the page no matter how hight the view of the browser*/
+	min-height: 100vh;
+}
+
+main {
+	flex: 1;
+
+}
+
+/*FLEXBOX GRID LAYOUT PATTERN 1
+2 COLUMN LAYOUT*/
+
+/*Parent Flex Container*/
+.row {
+	display: flex;
+	flex-wrap: wrap;           /*   Default setup for small screens first*/
+	flex-direction: column;
+}
+
+.col {
+	flex: 1;
+	margin: .6em;
+	padding: .63em;				/*   Default setup for small screens first*/
+	color: #fff;
+	background-color: green;
+}
+
+/*FLEXBOX MEDIA QUIRIES*/
+
+@media screen and (min-width:768px) {
+	.row {
+		flex-direction: row;             /*This media query both main container items on to the same line (for ipday syle layout)*/
+		flex-wrap: wrap;
+	}
+	main .col:nth-child(1) {flex: 2;}    /*This makes the main item x2 the size of the aside container item*/
+}
+
+
+

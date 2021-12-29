@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  max-width: 1300px;
+  margin: 0 auto;
+  line-height: 1.6;
+  font-size: 16px;
+
+
+}
+
+header {
+
+}
+
+/* Background layer with an image */
+.backdrop {
+  background: url('elf.jpg');
+  background-size: cover;
+  height: 700px;
+  width: 100%;
+  display: flex;
+}
+/* Dark foreground layer, with white text, set to "multiply" mix blend mode */
+p.text {
+  text-align: center;
+  font-size: 190px;
+  font-weight: 700;
+  /* line-height: 700px;
+  white-space: nowrap; */   /* this can be used to vertically align text */
+  color: white;
+  background: rgb(0,0,0);
+  mix-blend-mode: darken;
+  height: 700px;
+
+}

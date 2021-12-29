@@ -1,0 +1,69 @@
+/*STANDARD REUSUABLE STYLES*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-size: 1.2em;
+	padding: 0;
+	margin: 0;
+	font-family: ;
+	font size: 18px;
+	
+}
+
+ul {
+	list-style: none;
+
+}
+
+/*1 COLUMN FLEXBOX LAYOUT*/
+
+.HolyGrail {
+	display: flex;
+	min-height: 100vh;
+  	flex-direction: column;
+}
+
+.HolyGrail-body {
+	flex: 1;
+	margin: .6em;
+	display: flex;
+	background-color: red;
+
+}
+.main-header {
+	display: flex;
+	justify-content: space-between;
+}
+
+.HolyGrail-footer {
+	display: flex;
+	background-color: green;
+	
+}
+
+.main-nav {
+	display: flex;
+	justify-content: space-around;
+
+}
+
+.HolyGrail-content {
+	display: flex;
+	align-items: center;
+	
+
+	
+}
+
+.banner {
+	flex: 1;
+
+
+}
+
+
